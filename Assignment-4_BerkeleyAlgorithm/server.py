@@ -94,3 +94,8 @@ def initiateClockServer(port=8080):
 
 if __name__ == "__main__":
     initiateClockServer(port=8080)
+
+
+#    chmod +x server.py
+#    python3 server.py
+#    python3 client.py
