@@ -68,3 +68,29 @@ int main(int argc, char* argv[]) {
     MPI_Finalize();
     return 0;
 }
+
+/*
+sudo apt update
+
+# Install MPICH (Message Passing Interface)
+sudo apt install mpich
+
+# Install OpenMPI (another implementation of MPI)
+sudo apt install openmpi-bin openmpi-common libopenmpi-dev
+
+
+# Compile the sumOfArray.c file
+mpicc sumOfArray.c -o sum1
+
+# Compile the sumAtProcc.c file
+mpicc sumAtProcc.c -o sum2
+
+
+mpirun -np 4 ./sum1
+or
+mpiexec -np 4 ./sum1
+
+mpirun -np 4 ./sum2
+or
+mpiexec -np 4 ./sum2
+*/
