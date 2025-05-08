@@ -75,7 +75,6 @@ sudo apt install mpich
 sudo apt install openmpi-bin openmpi-common libopenmpi-dev
 
 
-
 # Compile the sumOfArray.c file
 mpicc sumOfArray.c -o sum1
 
@@ -83,11 +82,9 @@ mpicc sumOfArray.c -o sum1
 mpicc sumAtProcc.c -o sum2
 
 
-
 mpirun -np 4 ./sum1
 or
 mpiexec -np 4 ./sum1
-
 
 mpirun -np 4 ./sum2
 or
